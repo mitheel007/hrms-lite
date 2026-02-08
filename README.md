@@ -1,19 +1,20 @@
-# HRMS Lite
+<<<<<<< HEAD
+# hrms-lite
 
-This repository contains a lightweight full-stack HRMS (Human Resource Management System) sample.
+A lightweight Human Resource Management System (HRMS Lite) with employee management and attendance tracking. Built to be clean, functional, and production-ready within scope constraints.
 
-Overview
+## Overview
 - Backend: FastAPI + SQLModel + SQLite
 - Frontend: React (Vite)
 
-Features
+## Features
 - Add / list / delete employees
 - Mark attendance (date + Present/Absent)
 - View attendance per employee
 
-Run locally
+## Run locally
 
-Backend
+### Backend
 ```
 cd backend
 python -m venv .venv
@@ -22,17 +23,21 @@ pip install -r requirements.txt
 uvicorn backend.main:app --reload --port 8000
 ```
 
-Frontend
+### Frontend
 ```
 cd frontend
 npm install
 npm run dev
 ```
 
-Notes
+## Notes
 - API base for frontend defaults to `http://localhost:8000`. Use `VITE_API_BASE` env var to override.
 - Database file is `backend/hrms.db` (SQLite).
 
-Limitations & assumptions
+## Limitations & assumptions
 - Single admin user; no auth
 - Minimal validation on frontend; backend enforces required fields and duplicate checks
+=======
+# hrms-lite
+A lightweight Human Resource Management System (HRMS Lite) with employee management and attendance tracking. Built to be clean, functional, and production-ready within scope constraints.
+>>>>>>> ee0a835e2783617621920db90c68511ac4aa8148
