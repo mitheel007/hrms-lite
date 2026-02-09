@@ -4,7 +4,7 @@ import EmployeeForm from './components/EmployeeForm'
 import EmployeeList from './components/EmployeeList'
 import AttendancePanel from './components/AttendancePanel'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE || ''
 
 export default function App(){
   const [employees, setEmployees] = useState([])
